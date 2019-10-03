@@ -13,15 +13,8 @@ export declare class StyleGuideService {
     constructor(buttonModel: Model, tabsModel: Model, styleGuideModel: Model, formModel: Model, badgeModel: Model, cardModel: Model, tooltipModel: Model, popoverModel: Model, alertModel: Model, StyleGuideConfigModel: Model);
     findAll(): Promise<any>;
     findAllComponents(): Promise<{
-        buttons: any;
-        tabs: any;
-        forms: any;
-        badges: any;
-        cards: any;
-        tooltips: any;
-        popovers: any;
-        alerts: any;
         colors: any;
+        components: any[];
     }>;
     findOne(id: any): Promise<any>;
     add(styleGuide: any): Promise<any>;

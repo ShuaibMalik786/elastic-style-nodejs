@@ -13,7 +13,7 @@ export class StyleGuideConfigController {
     return button;
   }
 
-  @Get(':id') 
+  @Get(':id')
   async getOne(@Param('id') id) {
     const button = await this.service.findOne(id);
     return button;

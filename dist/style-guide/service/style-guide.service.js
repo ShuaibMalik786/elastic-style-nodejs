@@ -35,26 +35,36 @@ let StyleGuideService = class StyleGuideService {
         return buttons;
     }
     async findAllComponents() {
-        const buttons = await this.buttonModel.find();
-        const tabs = await this.tabsModel.find();
-        const forms = await this.formModel.find();
-        const badges = await this.badgeModel.find();
-        const cards = await this.cardModel.find();
-        const tooltips = await this.tooltipModel.find();
-        const popovers = await this.popoverModel.find();
-        const alerts = await this.alertModel.find();
-        const colors = await this.StyleGuideConfigModel.find({ active: true });
         const temp = {
-            buttons: buttons,
-            tabs: tabs,
-            forms: forms,
-            badges: badges,
-            cards: cards,
-            tooltips: tooltips,
-            popovers: popovers,
-            alerts: alerts,
-            colors: colors,
+            colors: undefined,
+            components: [],
         };
+        const buttons = await this.buttonModel.find();
+        let cmp = { name: 'Button', list: buttons };
+        temp.components.push(cmp);
+        const tabs = await this.tabsModel.find();
+        cmp = { name: 'Tabs', list: tabs };
+        temp.components.push(cmp);
+        const forms = await this.formModel.find();
+        cmp = { name: 'Form', list: forms };
+        temp.components.push(cmp);
+        const badges = await this.badgeModel.find();
+        cmp = { name: 'Badge', list: badges };
+        temp.components.push(cmp);
+        const cards = await this.cardModel.find();
+        cmp = { name: 'Card', list: cards };
+        temp.components.push(cmp);
+        const tooltips = await this.tooltipModel.find();
+        cmp = { name: 'Tooltip', list: tooltips };
+        temp.components.push(cmp);
+        const popovers = await this.popoverModel.find();
+        cmp = { name: 'Popover', list: popovers };
+        temp.components.push(cmp);
+        const alerts = await this.alertModel.find();
+        cmp = { name: 'Alert', list: alerts };
+        temp.components.push(cmp);
+        const colors = await this.StyleGuideConfigModel.find({ active: true });
+        temp.colors = colors;
         return temp;
     }
     async findOne(id) {

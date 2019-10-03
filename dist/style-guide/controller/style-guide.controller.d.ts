@@ -5,15 +5,8 @@ export declare class StyleGuideController {
     constructor(styleGuideService: StyleGuideService);
     getAll(): Promise<any>;
     getAllComponents(): Promise<{
-        buttons: any;
-        tabs: any;
-        forms: any;
-        badges: any;
-        cards: any;
-        tooltips: any;
-        popovers: any;
-        alerts: any;
         colors: any;
+        components: any[];
     }>;
     getOne(id: any): Promise<any>;
     create(styleGuide: any, response: Response): Promise<void>;

@@ -43,7 +43,7 @@ let StyleGuideService = class StyleGuideService {
         let cmp = { name: 'Button', list: buttons };
         temp.components.push(cmp);
         const tabs = await this.tabsModel.find();
-        cmp = { name: 'Tabs', list: tabs };
+        cmp = { name: 'Tab', list: tabs };
         temp.components.push(cmp);
         const forms = await this.formModel.find();
         cmp = { name: 'Form', list: forms };

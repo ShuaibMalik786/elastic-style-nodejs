@@ -26,16 +26,18 @@ export class StyleGuideService {
   }
 
   async findAllComponents() {
+    // temporary variable to attach components and default color
     const temp = {
       colors: undefined,
       components: [],
     };
 
+    // Attach components with there names
     const buttons = await this.buttonModel.find();
     let cmp = { name: 'Button', list: buttons };
     temp.components.push(cmp);
     const tabs = await this.tabsModel.find();
-    cmp = { name: 'Tabs', list: tabs };
+    cmp = { name: 'Tab', list: tabs };
     temp.components.push(cmp);
     const forms = await this.formModel.find();
     cmp = { name: 'Form', list: forms };
@@ -55,19 +57,10 @@ export class StyleGuideService {
     const alerts = await this.alertModel.find();
     cmp = { name: 'Alert', list: alerts };
     temp.components.push(cmp);
+
+    // Attach configured default color
     const colors = await this.StyleGuideConfigModel.find({ active: true });
     temp.colors = colors;
-    // const temp = {
-    //   buttons: buttons,
-    //   tabs: tabs,
-    //   forms: forms,
-    //   badges: badges,
-    //   cards: cards,
-    //   tooltips: tooltips,
-    //   popovers: popovers,
-    //   alerts: alerts,
-    //   colors: colors,
-    // };
     return temp;
   }
 

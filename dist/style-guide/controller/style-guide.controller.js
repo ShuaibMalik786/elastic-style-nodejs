@@ -28,14 +28,15 @@ let StyleGuideController = class StyleGuideController {
         return components;
     }
     async getOne(id) {
-        let components = await this.styleGuideService.findOne(id);
+        const components = await this.styleGuideService.findOne(id);
         return components;
     }
     async create(styleGuide, response) {
         const stGuide = await this.styleGuideService.add(styleGuide);
         await fs.writeFile('./temp/elasticStyle.css', stGuide.data.css, (err) => {
-            if (err)
+            if (err) {
                 throw err;
+            }
             return response.download('./temp/elasticStyle.css');
         });
     }
@@ -44,10 +45,11 @@ let StyleGuideController = class StyleGuideController {
         return temp;
     }
     async getStyleGuide(id, response) {
-        let temp = await this.styleGuideService.findOne(id);
-        let file = fs.writeFile('./temp/mynewfile1.css', temp.tabsCss, function (err) {
-            if (err)
+        const temp = await this.styleGuideService.findOne(id);
+        const file = fs.writeFile('./temp/mynewfile1.css', temp.tabsCss, (err) => {
+            if (err) {
                 throw err;
+            }
         });
         return response.download('./temp/mynewfile1.css');
     }

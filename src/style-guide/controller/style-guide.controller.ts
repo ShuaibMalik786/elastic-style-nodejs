@@ -24,7 +24,7 @@ export class StyleGuideController {
 
   @Get(':id')
   async getOne(@Param('id') id) {
-    let components = await this.styleGuideService.findOne(id);
+    const components = await this.styleGuideService.findOne(id);
     return components;
   }
 
@@ -32,8 +32,10 @@ export class StyleGuideController {
   async create(@Body() styleGuide, @Res() response: Response) {
     const stGuide = await this.styleGuideService.add(styleGuide);
     await fs.writeFile('./temp/elasticStyle.css', stGuide.data.css, (err) => {
-      if (err) throw err;
-     return response.download('./temp/elasticStyle.css');
+      if (err) {
+        throw err;
+      }
+      return response.download('./temp/elasticStyle.css');
     });
   }
 
@@ -43,12 +45,13 @@ export class StyleGuideController {
     return temp;
   }
 
-
   @Get('genrate/:id')
   async getStyleGuide(@Param('id') id, @Res() response: Response) {
-    let temp = await this.styleGuideService.findOne(id);
-    let file = fs.writeFile('./temp/mynewfile1.css', temp.tabsCss, function(err) {
-      if (err) throw err;
+    const temp = await this.styleGuideService.findOne(id);
+    const file = fs.writeFile('./temp/mynewfile1.css', temp.tabsCss, (err) => {
+      if (err) {
+        throw err;
+      }
     });
     // res.download(file); // Set disposition and send it.
     return response.download('./temp/mynewfile1.css');

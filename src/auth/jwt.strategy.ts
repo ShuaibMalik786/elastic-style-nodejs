@@ -7,7 +7,7 @@ import { jwtConstants } from './constants';
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy) {
   constructor(private userService: UserService) {
-    //configure passport-jwt
+    // configure passport-jwt
     super({
       jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
       ignoreExpiration: false,
@@ -15,7 +15,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
     });
   }
 
-  //Attach user and return
+  // Attach user and return
   async validate(payload: any) {
     let user = await this.userService.getOne(payload.sub);
     return user;

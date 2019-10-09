@@ -9,9 +9,10 @@ import * as _ from 'lodash';
 export class UserService {
   errorDetails = { error: '' };
 
-  constructor(@InjectModel('User') private readonly userModel: Model) {}
+  constructor(@InjectModel('User') private readonly userModel: Model) {
+  }
 
-  //find all user
+  // find all user
   async findAll(@Res() res: Response) {
     try {
       const users = await this.userModel
@@ -24,62 +25,53 @@ export class UserService {
     }
   }
 
-  //Create user
-  async create(user, @Res() res: Response) {
-    try {
-      const createdUser = new this.userModel(user);
-      let temp = await createdUser.save();
-      temp = _.pick(temp, ['_id', 'name', 'email', 'createdAt', 'updatedAt']);
-      // temp = await this.userModel.findById(temp._id).select("-password");
-      res.status(200).send(temp);
-    } catch (err) {
-      this.handleError(err, res);
-    }
+  // Create user
+  async create(user) {
+    const createdUser = new this.userModel(user);
+    let temp = await createdUser.save();
+    temp = _.pick(temp, ['_id', 'name', 'email', 'createdAt', 'updatedAt']);
+    // temp = await this.userModel.findById(temp._id).select("-password");
+    return temp;
   }
 
-  //update user
-  async update(id, user, @Res() res: Response) {
-    try {
-      const temp = await this.userModel
-        .findByIdAndUpdate(id, user, { new: true })
-        .select('-password')
-        .populate('roleId');
-      res.status(200).send(temp);
-    } catch (err) {
-      this.handleError(err, res);
-    }
+  // update user
+  async update(id, user) {
+    const temp = await this.userModel
+      .findByIdAndUpdate(id, user, { new: true })
+      .select('-password')
+      .populate('role');
+    return temp;
   }
 
-
-  //find user
+  // find user
   async findOne(id, @Res() res: Response) {
     try {
       const temp = await this.userModel
         .findById(id)
         .select('-password')
-        .populate('roleId');
+        .populate('role');
       res.status(200).send(temp);
     } catch (err) {
       this.handleError(err, res);
     }
   }
 
-    //get user
-    async getOne(id) {
-      try {
-        const temp = await this.userModel
-          .findById(id)
-          .select('-password')
-          .populate('roleId');
-       return temp;
-      } catch (err) {
-        return err;
-      }
+  // get user
+  async getOne(id) {
+    try {
+      const temp = await this.userModel
+        .findById(id)
+        .select('-password')
+        .populate('role');
+      return temp;
+    } catch (err) {
+      return err;
     }
+  }
 
   // handel error
   handleError(error, @Res() res: Response) {
-    let errorDetails = { error: '' };
+    const errorDetails = { error: '' };
     if (error.errmsg) {
       errorDetails.error = error.errmsg;
       res.status(400).send(errorDetails);

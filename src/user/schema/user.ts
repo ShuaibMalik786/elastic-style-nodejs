@@ -1,11 +1,11 @@
 import * as mongoose from 'mongoose';
-var RoleSchema = require('../schema/role').schema;
+const RoleSchema = require('../schema/role').schema;
 
 export const UserSchema = new mongoose.Schema(
   {
-    name: {
+    userName: {
       type: String,
-      required: true,
+      required: false,
       minlength: 2,
       maxlength: 50,
     },
@@ -22,11 +22,11 @@ export const UserSchema = new mongoose.Schema(
       minlength: 5,
       maxlength: 1024,
     },
-    roleId: [
+    role: [
       {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Role',
-        required: true,
+        required: false,
       },
     ],
   },

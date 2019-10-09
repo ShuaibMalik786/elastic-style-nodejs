@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose = require("mongoose");
-var RoleSchema = require('../schema/role').schema;
+const RoleSchema = require('../schema/role').schema;
 exports.UserSchema = new mongoose.Schema({
-    name: {
+    userName: {
         type: String,
-        required: true,
+        required: false,
         minlength: 2,
         maxlength: 50,
     },
@@ -22,11 +22,11 @@ exports.UserSchema = new mongoose.Schema({
         minlength: 5,
         maxlength: 1024,
     },
-    roleId: [
+    role: [
         {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'Role',
-            required: true,
+            required: false,
         },
     ],
 }, { timestamps: true });

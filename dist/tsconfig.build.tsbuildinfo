@@ -1286,8 +1286,8 @@
         "signature": "b568858e8311ecde8e13451bbb35d37b1f9f82bfb8bf9a60312eb71c476590c7"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/service/user.service.ts": {
-        "version": "33dfce46e7b315638b750d2654f4b6c8d48ec0c3e0909a3b1c55d6e4e456f045",
-        "signature": "059208b0ecb4298e8ddc72ea1bc8a777a1fe7c75b72f82b1d311f54b541242b0"
+        "version": "299b27a7a20d8d86d5a0f78676eb9d44c77b2fc50b3d95e2492e5b9b27a28c21",
+        "signature": "39a0e0b4110a4e6144e82ef8b02e9c970843c4ead06af8a2abd3b9c44aaae00a"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/passport/dist/abstract.strategy.d.ts": {
         "version": "ba63131c5e91f797736444933af16ffa42f9f8c150d859ec65f568f037a416ea",
@@ -1329,12 +1329,16 @@
         "version": "a2b176f66f0b708241265fb3b417597c9c9d21912bbb7f5cc00d99af551c2078",
         "signature": "a2b176f66f0b708241265fb3b417597c9c9d21912bbb7f5cc00d99af551c2078"
       },
+      "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/validator/user.ts": {
+        "version": "ddf61e351a0ec37b67a490f41e319af5968463d95a3cf7b627b6b57c7485a1da",
+        "signature": "8105692f039afeb8e7c36bb44babe4fe2bfee4fa1eb47a9300a9fe48b086c41b"
+      },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/controller/user.controller.ts": {
-        "version": "97bfe2069c8c8d334f74435c6ecc0379e29697419b7be10d08af06ae08ae0b6f",
-        "signature": "b9620525a4ce363f7d9631f5a9573e5db6a741034119eee9a9b93a82f3a0442b"
+        "version": "474d80b1b319c88971ac682dd872b40d8a0eade2455e1b936952865bc7261b2e",
+        "signature": "73884e494ff6ec302c741da2e0f51953731ea7c142a67ec9d74b67ab70ad9042"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/schema/user.ts": {
-        "version": "96c8252d2ce70b73c001bdc6ead6580d1d7e162cad41bd9280d8d0177ea51a63",
+        "version": "46e009f81a3948cb5512c59db0b5b7cff5aa592943702ac6acc6364ec121400f",
         "signature": "9368bf8d6c6ae153c57a9244bb5531f30a99c7961d2e19cbf1522795a0118c97"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/schema/role.ts": {
@@ -1914,7 +1918,7 @@
         "signature": "a2b176f66f0b708241265fb3b417597c9c9d21912bbb7f5cc00d99af551c2078"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/auth.service.ts": {
-        "version": "8406407377cb08c8a3a5f4c84a80ae00a73cbd04cf4e49ff610c676e5897fcb3",
+        "version": "058edf5cf03fbb432a610f0bc60b0f0c99b3d1004c9aaf82727b97fe9dd4ac88",
         "signature": "b87ed6bda599bbf997cd71038963acf70c1af6497485eb3835eae993f1a54120"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/validation/login.ts": {
@@ -1922,7 +1926,7 @@
         "signature": "457066235a2f1d378f051f2032e9176c8b94193c757cc4235b2089a98b7d014d"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/auth.controller.ts": {
-        "version": "e8cef0865134e01e8abaca72536fc52746e77e48c89ff5bd202d1d1a50ce7e6a",
+        "version": "780c55b9f47ccec8f2a87c1f53122b6b8c442b982c2347a71f33649c3af38ce0",
         "signature": "b04b5b7253f4f182647d6407e626fe08b107d46c39b7923986bfbd7667b1ab34"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/constants.ts": {
@@ -1942,7 +1946,7 @@
         "signature": "f85fffc677c8d48bc27860d21764d6a1f81605bcf5413539c435b8d9535c7498"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/jwt.strategy.ts": {
-        "version": "a6db8eb0b8bd897b2d2320e00fe7afd8c67cef4c0b139bb9e26d8c09dbe7892f",
+        "version": "1e87b945d3f0b000af164347bfc89e38ad2813c75622f2c8907ff9df18dba0e6",
         "signature": "7981bf2cec3d4aef9aeae703df543e0b0c24e23607afc6b93efe0b5b82902b09"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/auth.module.ts": {
@@ -2336,10 +2340,6 @@
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/room/class/roomtypes.ts": {
         "version": "ccf0d6c8e489b72092a62d31cb99b7d920533682ded40d5560b51febf81bec2f",
         "signature": "eb3f4e4cd3a8056dc66c5ec848d95396c816d8150a762c87aa7017b55d325632"
-      },
-      "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/validator/user.ts": {
-        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@babel/types/lib/index.d.ts": {
         "version": "9831162ce5f45c26f22caf9436a7e0dd0295001a7ec0e628405dd41e870148f5",
@@ -4395,11 +4395,17 @@
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/validator/user.ts": [
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/class-validator/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/controller/user.controller.ts": [
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/express/index.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/service/user.service.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/passport/index.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/common/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/validator/user.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -6099,10 +6105,6 @@
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/validator/user.ts": [
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@babel/types/lib/index.d.ts": [
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
@@ -6719,7 +6721,8 @@
       ],
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/controller/user.controller.ts": [
         "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/service/user.service.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/express/index.d.ts"
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/express/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/validator/user.ts"
       ],
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/passport/dist/passport.module.d.ts": [
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/common/index.d.ts",
@@ -9674,6 +9677,7 @@
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/passport/dist/passport/passport.strategy.d.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/passport/dist/index.d.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/passport/index.d.ts",
+      "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/validator/user.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/controller/user.controller.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/schema/user.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/schema/role.ts",
@@ -9926,7 +9930,6 @@
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/core/core.module.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/core/service/handelerror.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/room/class/roomtypes.ts",
-      "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/validator/user.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@babel/types/lib/index.d.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/babel__generator/index.d.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/babel__traverse/index.d.ts",

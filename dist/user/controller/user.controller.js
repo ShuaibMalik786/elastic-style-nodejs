@@ -15,6 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const user_service_1 = require("../service/user.service");
 const passport_1 = require("@nestjs/passport");
 const common_1 = require("@nestjs/common");
+const user_1 = require("../validator/user");
 let UserController = class UserController {
     constructor(userService) {
         this.userService = userService;
@@ -25,12 +26,16 @@ let UserController = class UserController {
     findOne(res, id) {
         this.userService.findOne(id, res);
     }
-    register(request, res) {
-        this.userService.create(request.body, res);
+    register(user) {
+        const temp = this.userService.create(user);
+        return temp;
+    }
+    update(user, id) {
+        const temp = this.userService.update(id, user);
+        return temp;
     }
 };
 __decorate([
-    common_1.UseGuards(passport_1.AuthGuard('jwt')),
     common_1.Get(),
     __param(0, common_1.Res()),
     __metadata("design:type", Function),
@@ -38,6 +43,7 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], UserController.prototype, "findAll", null);
 __decorate([
+    common_1.UseGuards(passport_1.AuthGuard('jwt')),
     common_1.Get(':id'),
     __param(0, common_1.Res()), __param(1, common_1.Param('id')),
     __metadata("design:type", Function),
@@ -46,11 +52,18 @@ __decorate([
 ], UserController.prototype, "findOne", null);
 __decorate([
     common_1.Post(),
-    __param(0, common_1.Request()), __param(1, common_1.Res()),
+    __param(0, common_1.Body()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:paramtypes", [user_1.UserDto]),
     __metadata("design:returntype", void 0)
 ], UserController.prototype, "register", null);
+__decorate([
+    common_1.Put(':id'),
+    __param(0, common_1.Body()), __param(1, common_1.Param('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [user_1.UserDto, Object]),
+    __metadata("design:returntype", void 0)
+], UserController.prototype, "update", null);
 UserController = __decorate([
     common_1.Controller('api/user'),
     __metadata("design:paramtypes", [user_service_1.UserService])

@@ -20,7 +20,7 @@ export class AuthService {
       let temp = await this.userModel
         .findOne({ email: user.email, password: user.password })
         .select('-password')
-        .populate('roleId');
+        .populate('role');
       if (!temp || temp.length == 0) {
         res.status(404).send({ error: 'Invalid email or password' });
       }

@@ -1,11 +1,12 @@
 import { AuthGuard } from '@nestjs/passport';
 import { LoginReq } from './validation/login';
 import { AuthService } from './auth.service';
-import { Controller, Get, Post, Request,Response, Res, Body, UseGuards, UseInterceptors, } from '@nestjs/common';
+import { Controller, Get, Post, Request, Response, Res, Body, UseGuards, UseInterceptors } from '@nestjs/common';
 
-@Controller('auth')
+@Controller('api/auth')
 export class AuthController {
-  constructor(private readonly authService: AuthService) {}
+  constructor(private readonly authService: AuthService) {
+  }
 
   //   @Get()
   //   getAll(@Req() request: Request, @Res() res: Response) {

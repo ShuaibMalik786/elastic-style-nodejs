@@ -35,35 +35,25 @@ let UserService = class UserService {
             this.handleError(err, res);
         }
     }
-    async create(user, res) {
-        try {
-            const createdUser = new this.userModel(user);
-            let temp = await createdUser.save();
-            temp = _.pick(temp, ['_id', 'name', 'email', 'createdAt', 'updatedAt']);
-            res.status(200).send(temp);
-        }
-        catch (err) {
-            this.handleError(err, res);
-        }
+    async create(user) {
+        const createdUser = new this.userModel(user);
+        let temp = await createdUser.save();
+        temp = _.pick(temp, ['_id', 'name', 'email', 'createdAt', 'updatedAt']);
+        return temp;
     }
-    async update(id, user, res) {
-        try {
-            const temp = await this.userModel
-                .findByIdAndUpdate(id, user, { new: true })
-                .select('-password')
-                .populate('roleId');
-            res.status(200).send(temp);
-        }
-        catch (err) {
-            this.handleError(err, res);
-        }
+    async update(id, user) {
+        const temp = await this.userModel
+            .findByIdAndUpdate(id, user, { new: true })
+            .select('-password')
+            .populate('role');
+        return temp;
     }
     async findOne(id, res) {
         try {
             const temp = await this.userModel
                 .findById(id)
                 .select('-password')
-                .populate('roleId');
+                .populate('role');
             res.status(200).send(temp);
         }
         catch (err) {
@@ -75,7 +65,7 @@ let UserService = class UserService {
             const temp = await this.userModel
                 .findById(id)
                 .select('-password')
-                .populate('roleId');
+                .populate('role');
             return temp;
         }
         catch (err) {
@@ -83,7 +73,7 @@ let UserService = class UserService {
         }
     }
     handleError(error, res) {
-        let errorDetails = { error: '' };
+        const errorDetails = { error: '' };
         if (error.errmsg) {
             errorDetails.error = error.errmsg;
             res.status(400).send(errorDetails);
@@ -103,18 +93,6 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], UserService.prototype, "findAll", null);
-__decorate([
-    __param(1, common_2.Res()),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, Object]),
-    __metadata("design:returntype", Promise)
-], UserService.prototype, "create", null);
-__decorate([
-    __param(2, common_2.Res()),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, Object, Object]),
-    __metadata("design:returntype", Promise)
-], UserService.prototype, "update", null);
 __decorate([
     __param(1, common_2.Res()),
     __metadata("design:type", Function),

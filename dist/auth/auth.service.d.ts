@@ -9,7 +9,7 @@ export declare class AuthService {
     constructor(userService: UserService, jwtService: JwtService, userModel: Model);
     login(user: any, res: Response): Promise<any>;
     handleError(error: any, res: Response): void;
-    genrateToken(user: any): {
+    genrateToken(usr: any): {
         user: any;
         access_token: string;
     };

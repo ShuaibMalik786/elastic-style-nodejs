@@ -42,7 +42,7 @@ let AuthService = class AuthService {
         }
     }
     handleError(error, res) {
-        let errorDetails = { error: '' };
+        const errorDetails = { error: '' };
         if (error.errmsg) {
             errorDetails.error = error.errmsg;
             res.status(400).send(errorDetails);
@@ -55,11 +55,11 @@ let AuthService = class AuthService {
             res.status(400).send(error);
         }
     }
-    genrateToken(user) {
-        const payload = { email: user.email, sub: user._id };
+    genrateToken(usr) {
+        const payload = { email: usr.email, sub: usr._id };
         return {
-            user: user,
-            access_token: this.jwtService.sign(payload)
+            user: usr,
+            access_token: this.jwtService.sign(payload),
         };
     }
 };

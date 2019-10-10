@@ -14,6 +14,10 @@ const user_service_1 = require("./service/user.service");
 const role_1 = require("./schema/role");
 const role_controller_1 = require("./controller/role.controller");
 const role_service_1 = require("./service/role.service");
+const auth_service_1 = require("../auth/auth.service");
+const passport_1 = require("@nestjs/passport");
+const jwt_1 = require("@nestjs/jwt");
+const constants_1 = require("../auth/constants");
 let UserModule = class UserModule {
 };
 UserModule = __decorate([
@@ -23,9 +27,13 @@ UserModule = __decorate([
                 { name: 'User', schema: user_1.UserSchema },
                 { name: 'Role', schema: role_1.RoleSchema },
             ]),
+            passport_1.PassportModule.register({ defaultStrategy: 'jwt' }),
+            jwt_1.JwtModule.register({
+                secret: constants_1.jwtConstants.secret,
+            }),
         ],
         controllers: [user_controller_1.UserController, role_controller_1.RoleController],
-        providers: [user_service_1.UserService, role_service_1.RoleService],
+        providers: [user_service_1.UserService, role_service_1.RoleService, auth_service_1.AuthService],
     })
 ], UserModule);
 exports.UserModule = UserModule;

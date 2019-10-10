@@ -13,7 +13,8 @@ export class AuthService {
     private readonly userService: UserService,
     private readonly jwtService: JwtService,
     @InjectModel('User') private readonly userModel: Model,
-  ) {}
+  ) {
+  }
 
   async login(user, @Res() res: Response): Promise<any> {
     try {
@@ -33,7 +34,7 @@ export class AuthService {
 
   // handel error
   handleError(error, @Res() res: Response) {
-    let errorDetails = { error: '' };
+    const errorDetails = { error: '' };
     if (error.errmsg) {
       errorDetails.error = error.errmsg;
       res.status(400).send(errorDetails);
@@ -43,13 +44,13 @@ export class AuthService {
     } else {
       res.status(400).send(error);
     }
-  } 
+  }
 
-  genrateToken(user) {
-    const payload = { email: user.email, sub: user._id };
+  genrateToken(usr) {
+    const payload = { email: usr.email, sub: usr._id };
     return {
-      user: user,
-      access_token: this.jwtService.sign(payload)
+      user: usr,
+      access_token: this.jwtService.sign(payload),
     };
   }
 }

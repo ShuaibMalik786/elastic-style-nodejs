@@ -3,10 +3,13 @@ import { UserService } from '../service/user.service';
 import { AuthGuard } from '@nestjs/passport';
 import { Controller, Get, Post, Res, Body, UseGuards, Param, Put } from '@nestjs/common';
 import { UserDto } from '../validator/user';
+import { AuthService } from '../../auth/auth.service';
 
 @Controller('api/user')
 export class UserController {
-  constructor(private readonly userService: UserService) {
+  constructor(private readonly userService: UserService,
+              private readonly  authService: AuthService,
+  ) {
   }
 
   // @UseGuards(AuthGuard('jwt'))
@@ -22,9 +25,16 @@ export class UserController {
   }
 
   @Post()
-  register(@Body() user: UserDto) {
+  create(@Body() user: UserDto) {
     const temp = this.userService.create(user);
     return temp;
+  }
+
+  @Post('/signUp')
+  async register(@Body() user: UserDto) {
+    const temp = await this.userService.create(user);
+    const token = await this.authService.genrateToken(temp);
+    return token;
   }
 
   // @UseGuards(AuthGuard('jwt'))

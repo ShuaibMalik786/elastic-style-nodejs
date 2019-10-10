@@ -6,6 +6,10 @@ import { UserService } from './service/user.service';
 import { RoleSchema } from './schema/role';
 import { RoleController } from './controller/role.controller';
 import { RoleService } from './service/role.service';
+import { AuthService } from '../auth/auth.service';
+import { PassportModule } from '@nestjs/passport';
+import { JwtModule } from '@nestjs/jwt';
+import { jwtConstants } from '../auth/constants';
 
 @Module({
   imports: [
@@ -13,8 +17,14 @@ import { RoleService } from './service/role.service';
       { name: 'User', schema: UserSchema },
       { name: 'Role', schema: RoleSchema },
     ]),
+    PassportModule.register({ defaultStrategy: 'jwt' }),
+    JwtModule.register({
+      secret: jwtConstants.secret,
+      // signOptions: { expiresIn: '10m' },
+    }),
   ],
   controllers: [UserController, RoleController],
-  providers: [UserService, RoleService],
+  providers: [UserService, RoleService, AuthService],
 })
-export class UserModule {}
+export class UserModule {
+}

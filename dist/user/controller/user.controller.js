@@ -16,9 +16,11 @@ const user_service_1 = require("../service/user.service");
 const passport_1 = require("@nestjs/passport");
 const common_1 = require("@nestjs/common");
 const user_1 = require("../validator/user");
+const auth_service_1 = require("../../auth/auth.service");
 let UserController = class UserController {
-    constructor(userService) {
+    constructor(userService, authService) {
         this.userService = userService;
+        this.authService = authService;
     }
     findAll(res) {
         this.userService.findAll(res);
@@ -26,9 +28,14 @@ let UserController = class UserController {
     findOne(res, id) {
         this.userService.findOne(id, res);
     }
-    register(user) {
+    create(user) {
         const temp = this.userService.create(user);
         return temp;
+    }
+    async register(user) {
+        const temp = await this.userService.create(user);
+        const token = await this.authService.genrateToken(temp);
+        return token;
     }
     update(user, id) {
         const temp = this.userService.update(id, user);
@@ -56,6 +63,13 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [user_1.UserDto]),
     __metadata("design:returntype", void 0)
+], UserController.prototype, "create", null);
+__decorate([
+    common_1.Post('/signUp'),
+    __param(0, common_1.Body()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [user_1.UserDto]),
+    __metadata("design:returntype", Promise)
 ], UserController.prototype, "register", null);
 __decorate([
     common_1.Put(':id'),
@@ -66,7 +80,8 @@ __decorate([
 ], UserController.prototype, "update", null);
 UserController = __decorate([
     common_1.Controller('api/user'),
-    __metadata("design:paramtypes", [user_service_1.UserService])
+    __metadata("design:paramtypes", [user_service_1.UserService,
+        auth_service_1.AuthService])
 ], UserController);
 exports.UserController = UserController;
 //# sourceMappingURL=user.controller.js.map

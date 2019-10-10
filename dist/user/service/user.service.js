@@ -17,7 +17,6 @@ const common_1 = require("@nestjs/common");
 const mongoose_1 = require("@nestjs/mongoose");
 const mongoose_2 = require("mongoose");
 const common_2 = require("@nestjs/common");
-const _ = require("lodash");
 let UserService = class UserService {
     constructor(userModel) {
         this.userModel = userModel;
@@ -38,7 +37,7 @@ let UserService = class UserService {
     async create(user) {
         const createdUser = new this.userModel(user);
         let temp = await createdUser.save();
-        temp = _.pick(temp, ['_id', 'name', 'email', 'createdAt', 'updatedAt']);
+        temp = await this.userModel.findById(temp._id).select("-password");
         return temp;
     }
     async update(id, user) {

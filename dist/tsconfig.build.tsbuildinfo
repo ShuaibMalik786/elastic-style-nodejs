@@ -1286,7 +1286,7 @@
         "signature": "b568858e8311ecde8e13451bbb35d37b1f9f82bfb8bf9a60312eb71c476590c7"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/service/user.service.ts": {
-        "version": "299b27a7a20d8d86d5a0f78676eb9d44c77b2fc50b3d95e2492e5b9b27a28c21",
+        "version": "b69156d0b5d38ed7db4468f3ad1cdc5fde88fa6b4113493f90517ca9777931ab",
         "signature": "39a0e0b4110a4e6144e82ef8b02e9c970843c4ead06af8a2abd3b9c44aaae00a"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/passport/dist/abstract.strategy.d.ts": {
@@ -1333,9 +1333,41 @@
         "version": "ddf61e351a0ec37b67a490f41e319af5968463d95a3cf7b627b6b57c7485a1da",
         "signature": "8105692f039afeb8e7c36bb44babe4fe2bfee4fa1eb47a9300a9fe48b086c41b"
       },
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/jsonwebtoken/index.d.ts": {
+        "version": "3ee1c4479498ce568cf7789174c181a68a7f7f16f7b338132ded0daf24a8a971",
+        "signature": "3ee1c4479498ce568cf7789174c181a68a7f7f16f7b338132ded0daf24a8a971"
+      },
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts": {
+        "version": "b0d13187d80ad7ba46537913f1458c4bd3778ffde916a4673c2df5f479c8be15",
+        "signature": "b0d13187d80ad7ba46537913f1458c4bd3778ffde916a4673c2df5f479c8be15"
+      },
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/index.d.ts": {
+        "version": "7c14e702387296711c1a829bc95052ff02f533d4aa27d53cc0186c795094a3a9",
+        "signature": "7c14e702387296711c1a829bc95052ff02f533d4aa27d53cc0186c795094a3a9"
+      },
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.module.d.ts": {
+        "version": "579f8828da42ae02db6915a0223d23b0da07157ff484fecdbf8a96fffa0fa4df",
+        "signature": "579f8828da42ae02db6915a0223d23b0da07157ff484fecdbf8a96fffa0fa4df"
+      },
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.service.d.ts": {
+        "version": "1695b64f0130b6aef2c1eb7cecc1d9339bf2181af887ce5ccc6c3075115d6355",
+        "signature": "1695b64f0130b6aef2c1eb7cecc1d9339bf2181af887ce5ccc6c3075115d6355"
+      },
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/index.d.ts": {
+        "version": "a13aac535101a942283e3d00bce50f483bfa9bed6e1f8dfda33a3bb072498776",
+        "signature": "a13aac535101a942283e3d00bce50f483bfa9bed6e1f8dfda33a3bb072498776"
+      },
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/index.d.ts": {
+        "version": "a2b176f66f0b708241265fb3b417597c9c9d21912bbb7f5cc00d99af551c2078",
+        "signature": "a2b176f66f0b708241265fb3b417597c9c9d21912bbb7f5cc00d99af551c2078"
+      },
+      "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/auth.service.ts": {
+        "version": "456970d8306893787a9ddfbe7df84d5ece64347541f20d4e9ea7ad0301444c23",
+        "signature": "0c93fdb1520fae121bc6ed3dbffeefafee2883a2904800e64301c04da968e07d"
+      },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/controller/user.controller.ts": {
-        "version": "474d80b1b319c88971ac682dd872b40d8a0eade2455e1b936952865bc7261b2e",
-        "signature": "73884e494ff6ec302c741da2e0f51953731ea7c142a67ec9d74b67ab70ad9042"
+        "version": "96e7a8519dac0752269a7143c9369d1b6b4c899b57c92bc358e87e8a4528b4f3",
+        "signature": "a5fc0427c03a8e40dcf4cf8dd2b3f0e0d939b96764bf96a78bba2e2000c95376"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/schema/user.ts": {
         "version": "46e009f81a3948cb5512c59db0b5b7cff5aa592943702ac6acc6364ec121400f",
@@ -1353,8 +1385,12 @@
         "version": "35c66d553077c86fc20337198f05702fa551dcbcee19ef936d64ab9330bec73b",
         "signature": "626c97d4fbab27e27e18ba13772c2e8105714068c7eab03043e1dc7316611020"
       },
+      "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/constants.ts": {
+        "version": "cb9fbe81cb411d01111275b9786714fb6a97856356fb5c9972a11b24c1c5fee2",
+        "signature": "541603c0913bf3791cdca6f10c3bcd0042e5858974e191e345bfecb3523124fb"
+      },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/user.module.ts": {
-        "version": "badfaa37078af5d34d1f1a080cf808594e223cc88fa025dd72c5d35b2614eb3f",
+        "version": "21bc198cf72cecfc7432233bb8c80ca9f97e3aa4cc73ba890a6c651f07949704",
         "signature": "9e36626cb39f17790cf2403e2e54d8a74542da63e2a49aba7061133a1af26dcd"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/core/adapters/http-adapter.d.ts": {
@@ -1889,38 +1925,6 @@
         "version": "4eabb52fa168b1d7724c525f9785a699362a795b8df8966db87d91d0a3d8212d",
         "signature": "7975f6af7747f0500115cd28cb5f52827417932e13a7d6ca5e628fba3afe64d3"
       },
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/jsonwebtoken/index.d.ts": {
-        "version": "3ee1c4479498ce568cf7789174c181a68a7f7f16f7b338132ded0daf24a8a971",
-        "signature": "3ee1c4479498ce568cf7789174c181a68a7f7f16f7b338132ded0daf24a8a971"
-      },
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts": {
-        "version": "b0d13187d80ad7ba46537913f1458c4bd3778ffde916a4673c2df5f479c8be15",
-        "signature": "b0d13187d80ad7ba46537913f1458c4bd3778ffde916a4673c2df5f479c8be15"
-      },
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/index.d.ts": {
-        "version": "7c14e702387296711c1a829bc95052ff02f533d4aa27d53cc0186c795094a3a9",
-        "signature": "7c14e702387296711c1a829bc95052ff02f533d4aa27d53cc0186c795094a3a9"
-      },
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.module.d.ts": {
-        "version": "579f8828da42ae02db6915a0223d23b0da07157ff484fecdbf8a96fffa0fa4df",
-        "signature": "579f8828da42ae02db6915a0223d23b0da07157ff484fecdbf8a96fffa0fa4df"
-      },
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.service.d.ts": {
-        "version": "1695b64f0130b6aef2c1eb7cecc1d9339bf2181af887ce5ccc6c3075115d6355",
-        "signature": "1695b64f0130b6aef2c1eb7cecc1d9339bf2181af887ce5ccc6c3075115d6355"
-      },
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/index.d.ts": {
-        "version": "a13aac535101a942283e3d00bce50f483bfa9bed6e1f8dfda33a3bb072498776",
-        "signature": "a13aac535101a942283e3d00bce50f483bfa9bed6e1f8dfda33a3bb072498776"
-      },
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/index.d.ts": {
-        "version": "a2b176f66f0b708241265fb3b417597c9c9d21912bbb7f5cc00d99af551c2078",
-        "signature": "a2b176f66f0b708241265fb3b417597c9c9d21912bbb7f5cc00d99af551c2078"
-      },
-      "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/auth.service.ts": {
-        "version": "058edf5cf03fbb432a610f0bc60b0f0c99b3d1004c9aaf82727b97fe9dd4ac88",
-        "signature": "b87ed6bda599bbf997cd71038963acf70c1af6497485eb3835eae993f1a54120"
-      },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/validation/login.ts": {
         "version": "bde8422d2cd199da2ded81de2a6efedb46c873b5c0a58ffc9b412d374cea4b53",
         "signature": "457066235a2f1d378f051f2032e9176c8b94193c757cc4235b2089a98b7d014d"
@@ -1928,10 +1932,6 @@
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/auth.controller.ts": {
         "version": "780c55b9f47ccec8f2a87c1f53122b6b8c442b982c2347a71f33649c3af38ce0",
         "signature": "b04b5b7253f4f182647d6407e626fe08b107d46c39b7923986bfbd7667b1ab34"
-      },
-      "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/constants.ts": {
-        "version": "cb9fbe81cb411d01111275b9786714fb6a97856356fb5c9972a11b24c1c5fee2",
-        "signature": "541603c0913bf3791cdca6f10c3bcd0042e5858974e191e345bfecb3523124fb"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/passport/index.d.ts": {
         "version": "31a5aab6f219b912bea2a80de1a1232272314eff56177416fb31ba95bb9c64e6",
@@ -1946,7 +1946,7 @@
         "signature": "f85fffc677c8d48bc27860d21764d6a1f81605bcf5413539c435b8d9535c7498"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/jwt.strategy.ts": {
-        "version": "1e87b945d3f0b000af164347bfc89e38ad2813c75622f2c8907ff9df18dba0e6",
+        "version": "b17ccc5aca7099e3e97f32a88a6bd0de7b2b4077dcc831da847babe7c9226331",
         "signature": "7981bf2cec3d4aef9aeae703df543e0b0c24e23607afc6b93efe0b5b82902b09"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/auth.module.ts": {
@@ -4400,12 +4400,64 @@
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/jsonwebtoken/index.d.ts": [
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts": [
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/common/interfaces/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/jsonwebtoken/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/index.d.ts": [
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.module.d.ts": [
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/common/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.service.d.ts": [
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/jsonwebtoken/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/index.d.ts": [
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.module.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.service.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/index.d.ts": [
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/auth.service.ts": [
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/common/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/service/user.service.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/mongoose/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/express/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/controller/user.controller.ts": [
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/express/index.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/service/user.service.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/passport/index.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/common/index.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/validator/user.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/auth.service.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -4431,6 +4483,10 @@
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/constants.ts": [
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/user.module.ts": [
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/mongoose/index.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/common/index.d.ts",
@@ -4440,6 +4496,10 @@
         "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/schema/role.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/controller/role.controller.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/service/role.service.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/auth.service.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/passport/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/constants.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5338,57 +5398,6 @@
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/jsonwebtoken/index.d.ts": [
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/index.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts": [
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/common/interfaces/index.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/jsonwebtoken/index.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/index.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/index.d.ts": [
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.module.d.ts": [
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/common/index.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.service.d.ts": [
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/jsonwebtoken/index.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/index.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/index.d.ts": [
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/index.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.module.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.service.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/index.d.ts": [
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/index.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/auth.service.ts": [
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/common/index.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/service/user.service.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/mongoose/index.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/express/index.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/index.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/validation/login.ts": [
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/class-validator/index.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
@@ -5399,10 +5408,6 @@
         "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/validation/login.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/auth.service.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/common/index.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/constants.ts": [
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -6478,29 +6483,6 @@
         "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/auth.service.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/validation/login.ts"
       ],
-      "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/auth.service.ts": [
-        "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/service/user.service.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/index.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/express/index.d.ts"
-      ],
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.module.d.ts": [
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/common/index.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/index.d.ts": [
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/index.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.module.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.service.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/index.d.ts": [
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/index.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/core/inercepor/logging.interceptor.ts": [
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/common/index.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/rxjs/index.d.ts"
@@ -6721,8 +6703,32 @@
       ],
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/controller/user.controller.ts": [
         "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/service/user.service.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/auth.service.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/express/index.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/validator/user.ts"
+      ],
+      "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/auth.service.ts": [
+        "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/service/user.service.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/express/index.d.ts"
+      ],
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.module.d.ts": [
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/common/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/index.d.ts": [
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.module.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.service.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/index.d.ts": [
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/index.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/passport/dist/passport.module.d.ts": [
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/common/index.d.ts",
@@ -9678,11 +9684,20 @@
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/passport/dist/index.d.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/passport/index.d.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/validator/user.ts",
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/jsonwebtoken/index.d.ts",
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts",
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/index.d.ts",
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.module.d.ts",
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.service.d.ts",
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/index.d.ts",
+      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/index.d.ts",
+      "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/auth.service.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/controller/user.controller.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/schema/user.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/schema/role.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/service/role.service.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/controller/role.controller.ts",
+      "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/constants.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/user/user.module.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/core/adapters/http-adapter.d.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/core/adapters/index.d.ts",
@@ -9817,17 +9832,8 @@
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/rxjs/internal/operators/zipall.d.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/rxjs/operators/index.d.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/core/inercepor/logging.interceptor.ts",
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/jsonwebtoken/index.d.ts",
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts",
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/interfaces/index.d.ts",
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.module.d.ts",
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/jwt.service.d.ts",
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/dist/index.d.ts",
-      "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/jwt/index.d.ts",
-      "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/auth.service.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/validation/login.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/auth.controller.ts",
-      "d:/newfolder/elastic-style/elastic-style-nodejs/src/auth/constants.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/passport/index.d.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/passport-strategy/index.d.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/passport-jwt/index.d.ts",

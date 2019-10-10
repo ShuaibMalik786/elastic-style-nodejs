@@ -29,8 +29,8 @@ export class UserService {
   async create(user) {
     const createdUser = new this.userModel(user);
     let temp = await createdUser.save();
-    temp = _.pick(temp, ['_id', 'name', 'email', 'createdAt', 'updatedAt']);
-    // temp = await this.userModel.findById(temp._id).select("-password");
+    // temp = _.pick(temp, ['_id', 'userName', 'email', 'createdAt', 'updatedAt']);
+    temp = await this.userModel.findById(temp._id).select("-password");
     return temp;
   }
 

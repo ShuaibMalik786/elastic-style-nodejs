@@ -44,7 +44,7 @@ import { StyleGuideConfigModule } from './style-guide-config/style-guide-config.
       // rootPath: join(__dirname, '../../elastic-style-angular/dist/admin'), // office
       // rootPath: join(__dirname, '../../client/admin/dist/admin'), // home
       rootPath: join(__dirname, '../angular/dist/admin'), // heroku
-    }), 
+    }),
     AuthModule,
     RoomModule,
     MessageModule,
@@ -80,4 +80,5 @@ import { StyleGuideConfigModule } from './style-guide-config/style-guide-config.
     },
   ],
 })
-export class AppModule {}
+export class AppModule {
+}

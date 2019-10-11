@@ -4,6 +4,7 @@ import { AuthGuard } from '@nestjs/passport';
 import { Controller, Get, Post, Res, Body, UseGuards, Param, Put } from '@nestjs/common';
 import { UserDto } from '../validator/user';
 import { AuthService } from '../../auth/auth.service';
+import { UserUpdateDto } from '../validator/userUpdate';
 
 @Controller('api/user')
 export class UserController {
@@ -39,7 +40,7 @@ export class UserController {
 
   // @UseGuards(AuthGuard('jwt'))
   @Put(':id')
-  update(@Body() user: UserDto, @Param('id') id) {
+  update(@Body() user: UserUpdateDto, @Param('id') id) {
     const temp = this.userService.update(id, user);
     return temp;
   }

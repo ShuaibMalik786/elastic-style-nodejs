@@ -69,6 +69,12 @@ export class StyleGuideService {
     return buttons;
   }
 
+  async findUserSGs(userId) {
+    // const buttons = await this.styleGuideModel.find(userId).populate('button tab');
+    const sg = await this.styleGuideModel.find({ 'data.userId': userId }).populate('button tab');
+    return sg;
+  }
+
   async add(styleGuide) {
     const model = new this.styleGuideModel({ data: styleGuide });
     const temp = await model.save();

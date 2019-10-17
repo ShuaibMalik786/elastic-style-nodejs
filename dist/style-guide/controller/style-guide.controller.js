@@ -27,6 +27,10 @@ let StyleGuideController = class StyleGuideController {
         let components = await this.styleGuideService.findAllComponents();
         return components;
     }
+    async getUserSGs(userId) {
+        const components = await this.styleGuideService.findUserSGs(userId);
+        return components;
+    }
     async getOne(id) {
         const components = await this.styleGuideService.findOne(id);
         return components;
@@ -66,6 +70,13 @@ __decorate([
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
 ], StyleGuideController.prototype, "getAllComponents", null);
+__decorate([
+    common_1.Get('user/:userId'),
+    __param(0, common_1.Param('userId')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], StyleGuideController.prototype, "getUserSGs", null);
 __decorate([
     common_1.Get(':id'),
     __param(0, common_1.Param('id')),

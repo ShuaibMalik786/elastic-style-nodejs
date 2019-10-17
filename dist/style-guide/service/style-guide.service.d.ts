@@ -17,6 +17,7 @@ export declare class StyleGuideService {
         components: any[];
     }>;
     findOne(id: any): Promise<any>;
+    findUserSGs(userId: any): Promise<any>;
     add(styleGuide: any): Promise<any>;
     update(id: any, button: any): Promise<any>;
     scssToCss(scss: any): Promise<any>;

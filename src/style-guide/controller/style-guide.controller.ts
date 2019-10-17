@@ -22,6 +22,12 @@ export class StyleGuideController {
     return components;
   }
 
+  @Get('user/:userId')
+  async getUserSGs(@Param('userId') userId) {
+    const components = await this.styleGuideService.findUserSGs(userId);
+    return components;
+  }
+
   @Get(':id')
   async getOne(@Param('id') id) {
     const components = await this.styleGuideService.findOne(id);

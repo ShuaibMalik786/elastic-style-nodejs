@@ -1994,8 +1994,8 @@
         "signature": "67cee22617a9ca22d6f08e07012181b3b15021898cfd4e34f53ce962d8b63ecd"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/style-guide/service/style-guide.service.ts": {
-        "version": "b5f9732460d5cb6192a6511d264591cc36209285117c035590134e805bf235fe",
-        "signature": "6268421c3dd87825ca0f2c2c0f464db4ed11e41dbeb41037a1bce7607ae4b851"
+        "version": "aed4679e3d6763d58470cdbab2bc61ca5ac713cba0885a5217fb00aac53eb6ab",
+        "signature": "2ed22edc824060462aeaa1d47cdb2ddad0a1d58fd27bb291fa3e618ca7c727cd"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/style-guide/controller/style-guide.controller.ts": {
         "version": "04a602ba0cb1e38f7fec25c6248cd12df48d334ff9ca2bf7bdd4690743706e58",
@@ -2037,8 +2037,12 @@
         "version": "122c71276d5c3f3a3b80d33b7fdbf62d60b2d65f7d3e31914041aa91c1793ae2",
         "signature": "041258fc787e7ec303c871db3cdad3f595c757b33ba35f03769b1c88a7b856a8"
       },
+      "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/typography/model/typography.ts": {
+        "version": "189202d5f4696c3f4697046755b8b022c616251134efc030fcd5e8dccb2ea16c",
+        "signature": "8554e4aa27dea14c555cdc77ecf13444fd7b48a870aec48a0de2a5382bc24cca"
+      },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/style-guide/style-guide.module.ts": {
-        "version": "137c1b7d6ff5dc4af32278f7f6df2597106f786cbf80c2d30eda62235c94cd42",
+        "version": "661a584de9b9cff8ebc68095097957de729da80e01eafb0ac748391439bd149b",
         "signature": "c8e215f9a3f31adad2d9037deb241aedaf3f643c78db1de74ad4fb4768323ee3"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/tabs/service/tabs/tabs.service.ts": {
@@ -2237,16 +2241,12 @@
         "version": "d7be0657cac76af45d901a8e50e9709ebe15443097debf72f089cdb1211e0c43",
         "signature": "f5fe0e0c046995543b7fa185f5650c05dfda0be842d4061ba3f67cf2b487d380"
       },
-      "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/typography/model/typography.ts": {
-        "version": "189202d5f4696c3f4697046755b8b022c616251134efc030fcd5e8dccb2ea16c",
-        "signature": "8554e4aa27dea14c555cdc77ecf13444fd7b48a870aec48a0de2a5382bc24cca"
-      },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/typography/service/typography.service.ts": {
         "version": "ec611c13e45c0766e342d1968c1fc6efe3d2858c587a1f8df65eb442b50faa95",
         "signature": "cf276319dd2d75fc711c593b29f18aaca62cafbe5435975221930047ba4b718b"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/typography/controller/typography.controller.ts": {
-        "version": "7e86397d31f94cd7ba928d011fa33f015c97fa1b36e7b14a3460587033d0e751",
+        "version": "47d1adc06e4787517a070aff3f3c8a3c3af3fa1b1666e43c5a245761eb4c82dc",
         "signature": "5f7de5cffaa9fe71295bcdb1c9e26fcf62fb727f8ca15f0d25df1b9366abbf62"
       },
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/typography/typography.module.ts": {
@@ -5572,6 +5572,10 @@
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/typography/model/typography.ts": [
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/style-guide/style-guide.module.ts": [
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@nestjs/common/index.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/src/style-guide/controller/style-guide.controller.ts",
@@ -5587,6 +5591,7 @@
         "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/popover/model/popover.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/alert/model/alert.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/src/style-guide-config/model/styleguideconfig.ts",
+        "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/typography/model/typography.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5909,10 +5914,6 @@
         "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/tooltip/model/tooltip.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/tooltip/service/tooltip.service.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/tooltip/controller/tooltip.controller.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
-        "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/typography/model/typography.ts": [
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/util.d.ts",
         "d:/newfolder/elastic-style/elastic-style-nodejs/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -9871,6 +9872,7 @@
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/popover/model/popover.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/alert/model/alert.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/style-guide-config/model/styleguideconfig.ts",
+      "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/typography/model/typography.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/style-guide/style-guide.module.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/tabs/service/tabs/tabs.service.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/tabs/controller/tabs/tabs.controller.ts",
@@ -9921,7 +9923,6 @@
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/tooltip/service/tooltip.service.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/tooltip/controller/tooltip.controller.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/tooltip/tooltip.module.ts",
-      "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/typography/model/typography.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/typography/service/typography.service.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/typography/controller/typography.controller.ts",
       "d:/newfolder/elastic-style/elastic-style-nodejs/src/styles/typography/typography.module.ts",

@@ -16,6 +16,7 @@ export class StyleGuideService {
     @InjectModel('Tooltip') private readonly tooltipModel: Model,
     @InjectModel('Popover') private readonly popoverModel: Model,
     @InjectModel('Alert') private readonly alertModel: Model,
+    @InjectModel('Typography') private readonly typographyModel: Model,
     @InjectModel('StyleGuideConfig') private readonly StyleGuideConfigModel: Model,
   ) {
   }
@@ -56,6 +57,9 @@ export class StyleGuideService {
     temp.components.push(cmp);
     const alerts = await this.alertModel.find();
     cmp = { name: 'Alert', list: alerts };
+    temp.components.push(cmp);
+    const typography = await this.typographyModel.find();
+    cmp = { name: 'Typography', list: typography };
     temp.components.push(cmp);
 
     // Attach configured default color

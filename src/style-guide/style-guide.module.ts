@@ -12,6 +12,7 @@ import { TooltipSchema } from '../styles/tooltip/model/tooltip';
 import { PopoverSchema } from '../styles/popover/model/popover';
 import { AlertSchema } from '../styles/alert/model/alert';
 import { StyleGuideConfigSchema } from '../style-guide-config/model/styleGuideConfig';
+import { TypographySchema } from '../styles/typography/model/typography';
 
 @Module({
   imports: [
@@ -26,6 +27,7 @@ import { StyleGuideConfigSchema } from '../style-guide-config/model/styleGuideCo
       { name: 'Popover', schema: PopoverSchema },
       { name: 'Alert', schema: AlertSchema },
       { name: 'StyleGuideConfig', schema: StyleGuideConfigSchema },
+      { name: 'Typography', schema: TypographySchema },
     ]),
   ],
   controllers: [StyleGuideController],

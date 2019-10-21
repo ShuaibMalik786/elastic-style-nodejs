@@ -9,8 +9,9 @@ export declare class StyleGuideService {
     private readonly tooltipModel;
     private readonly popoverModel;
     private readonly alertModel;
+    private readonly typographyModel;
     private readonly StyleGuideConfigModel;
-    constructor(buttonModel: Model, tabsModel: Model, styleGuideModel: Model, formModel: Model, badgeModel: Model, cardModel: Model, tooltipModel: Model, popoverModel: Model, alertModel: Model, StyleGuideConfigModel: Model);
+    constructor(buttonModel: Model, tabsModel: Model, styleGuideModel: Model, formModel: Model, badgeModel: Model, cardModel: Model, tooltipModel: Model, popoverModel: Model, alertModel: Model, typographyModel: Model, StyleGuideConfigModel: Model);
     findAll(): Promise<any>;
     findAllComponents(): Promise<{
         colors: any;

@@ -20,6 +20,7 @@ const tooltip_1 = require("../styles/tooltip/model/tooltip");
 const popover_1 = require("../styles/popover/model/popover");
 const alert_1 = require("../styles/alert/model/alert");
 const styleGuideConfig_1 = require("../style-guide-config/model/styleGuideConfig");
+const typography_1 = require("../styles/typography/model/typography");
 let StyleGuideModule = class StyleGuideModule {
 };
 StyleGuideModule = __decorate([
@@ -36,6 +37,7 @@ StyleGuideModule = __decorate([
                 { name: 'Popover', schema: popover_1.PopoverSchema },
                 { name: 'Alert', schema: alert_1.AlertSchema },
                 { name: 'StyleGuideConfig', schema: styleGuideConfig_1.StyleGuideConfigSchema },
+                { name: 'Typography', schema: typography_1.TypographySchema },
             ]),
         ],
         controllers: [style_guide_controller_1.StyleGuideController],

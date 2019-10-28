@@ -21,6 +21,7 @@ const popover_1 = require("../styles/popover/model/popover");
 const alert_1 = require("../styles/alert/model/alert");
 const styleGuideConfig_1 = require("../style-guide-config/model/styleGuideConfig");
 const typography_1 = require("../styles/typography/model/typography");
+const modal_1 = require("../styles/modal/model/modal");
 let StyleGuideModule = class StyleGuideModule {
 };
 StyleGuideModule = __decorate([
@@ -38,6 +39,7 @@ StyleGuideModule = __decorate([
                 { name: 'Alert', schema: alert_1.AlertSchema },
                 { name: 'StyleGuideConfig', schema: styleGuideConfig_1.StyleGuideConfigSchema },
                 { name: 'Typography', schema: typography_1.TypographySchema },
+                { name: 'Modal', schema: modal_1.ModalSchema },
             ]),
         ],
         controllers: [style_guide_controller_1.StyleGuideController],

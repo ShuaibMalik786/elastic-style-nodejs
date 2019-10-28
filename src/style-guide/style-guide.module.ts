@@ -13,6 +13,7 @@ import { PopoverSchema } from '../styles/popover/model/popover';
 import { AlertSchema } from '../styles/alert/model/alert';
 import { StyleGuideConfigSchema } from '../style-guide-config/model/styleGuideConfig';
 import { TypographySchema } from '../styles/typography/model/typography';
+import { ModalSchema } from '../styles/modal/model/modal';
 
 @Module({
   imports: [
@@ -28,9 +29,11 @@ import { TypographySchema } from '../styles/typography/model/typography';
       { name: 'Alert', schema: AlertSchema },
       { name: 'StyleGuideConfig', schema: StyleGuideConfigSchema },
       { name: 'Typography', schema: TypographySchema },
+      { name: 'Modal', schema: ModalSchema },
     ]),
   ],
   controllers: [StyleGuideController],
   providers: [StyleGuideService],
 })
-export class StyleGuideModule { }
+export class StyleGuideModule {
+}

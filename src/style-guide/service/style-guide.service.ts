@@ -17,6 +17,7 @@ export class StyleGuideService {
     @InjectModel('Popover') private readonly popoverModel: Model,
     @InjectModel('Alert') private readonly alertModel: Model,
     @InjectModel('Typography') private readonly typographyModel: Model,
+    @InjectModel('Modal') private readonly modalModel: Model,
     @InjectModel('StyleGuideConfig') private readonly StyleGuideConfigModel: Model,
   ) {
   }
@@ -60,6 +61,9 @@ export class StyleGuideService {
     temp.components.push(cmp);
     const typography = await this.typographyModel.find();
     cmp = { name: 'Typography', list: typography };
+    temp.components.push(cmp);
+    const modal = await this.modalModel.find();
+    cmp = { name: 'Modal', list: modal };
     temp.components.push(cmp);
 
     // Attach configured default color

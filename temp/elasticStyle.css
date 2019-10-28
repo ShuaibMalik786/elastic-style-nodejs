@@ -1,6 +1,5 @@
-.card{box-shadow:0 1px 4px rgba(0,0,0,0.4);border:0}.card .card-header{background-color:white}.card .card-footer{background-color:white}
 
-        body {font-size: 12px;}
+        html {font-size: 14px;}
         .bg-primary { background-color: #007bff;}
         .bg-success { background-color: #28a745;}
         .bg-info { background-color: #17a2b8;}

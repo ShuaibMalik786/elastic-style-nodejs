@@ -12,13 +12,13 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l;
+var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m;
 const mongoose_1 = require("@nestjs/mongoose");
 const common_1 = require("@nestjs/common");
 const mongoose_2 = require("mongoose");
 const sass = require('node-sass');
 let StyleGuideService = class StyleGuideService {
-    constructor(buttonModel, tabsModel, styleGuideModel, formModel, badgeModel, cardModel, tooltipModel, popoverModel, alertModel, typographyModel, StyleGuideConfigModel) {
+    constructor(buttonModel, tabsModel, styleGuideModel, formModel, badgeModel, cardModel, tooltipModel, popoverModel, alertModel, typographyModel, modalModel, StyleGuideConfigModel) {
         this.buttonModel = buttonModel;
         this.tabsModel = tabsModel;
         this.styleGuideModel = styleGuideModel;
@@ -29,6 +29,7 @@ let StyleGuideService = class StyleGuideService {
         this.popoverModel = popoverModel;
         this.alertModel = alertModel;
         this.typographyModel = typographyModel;
+        this.modalModel = modalModel;
         this.StyleGuideConfigModel = StyleGuideConfigModel;
     }
     async findAll() {
@@ -66,6 +67,9 @@ let StyleGuideService = class StyleGuideService {
         temp.components.push(cmp);
         const typography = await this.typographyModel.find();
         cmp = { name: 'Typography', list: typography };
+        temp.components.push(cmp);
+        const modal = await this.modalModel.find();
+        cmp = { name: 'Modal', list: modal };
         temp.components.push(cmp);
         const colors = await this.StyleGuideConfigModel.find({ active: true });
         temp.colors = colors;
@@ -122,8 +126,9 @@ StyleGuideService = __decorate([
     __param(7, mongoose_1.InjectModel('Popover')),
     __param(8, mongoose_1.InjectModel('Alert')),
     __param(9, mongoose_1.InjectModel('Typography')),
-    __param(10, mongoose_1.InjectModel('StyleGuideConfig')),
-    __metadata("design:paramtypes", [typeof (_a = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _a : Object, typeof (_b = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _b : Object, typeof (_c = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _c : Object, typeof (_d = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _d : Object, typeof (_e = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _e : Object, typeof (_f = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _f : Object, typeof (_g = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _g : Object, typeof (_h = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _h : Object, typeof (_j = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _j : Object, typeof (_k = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _k : Object, typeof (_l = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _l : Object])
+    __param(10, mongoose_1.InjectModel('Modal')),
+    __param(11, mongoose_1.InjectModel('StyleGuideConfig')),
+    __metadata("design:paramtypes", [typeof (_a = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _a : Object, typeof (_b = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _b : Object, typeof (_c = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _c : Object, typeof (_d = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _d : Object, typeof (_e = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _e : Object, typeof (_f = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _f : Object, typeof (_g = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _g : Object, typeof (_h = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _h : Object, typeof (_j = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _j : Object, typeof (_k = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _k : Object, typeof (_l = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _l : Object, typeof (_m = typeof mongoose_2.Model !== "undefined" && mongoose_2.Model) === "function" ? _m : Object])
 ], StyleGuideService);
 exports.StyleGuideService = StyleGuideService;
 //# sourceMappingURL=style-guide.service.js.map

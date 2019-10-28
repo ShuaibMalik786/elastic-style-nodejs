@@ -11,14 +11,10 @@ exports.ModalSchema = new mongoose.Schema({
     },
     css: {
         type: String,
-        required: false,
-        minlength: 1,
         maxlength: 20000,
     },
     previewCss: {
         type: String,
-        required: false,
-        minlength: 1,
         maxlength: 20000,
     },
     scss: {

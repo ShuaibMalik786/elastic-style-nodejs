@@ -39,7 +39,7 @@ export class AlertController {
   @Put(':id')
   async update(@Body() buttonDto, @Param('id') id) {
     buttonDto.previewScss = `#id${id}{${buttonDto.scss}}`;
-    let css = await this.service.scssToCss(buttonDto.previewScss);
+    let css = await this.service.scssToCss(buttonDto.scss);
     buttonDto['css'] = css;
     buttonDto['previewCss'] = css;
     let button = await this.service.update(id, buttonDto);

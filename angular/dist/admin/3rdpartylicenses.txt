@@ -351,8 +351,14 @@ SOFTWARE.
 @angular/core
 MIT
 
+eu-loader
+BSD-3-Clause
+
 @angular/common
 MIT
+
+eu-popup
+BSD-3-Clause
 
 rxjs-compat
 Apache-2.0
@@ -630,9 +636,6 @@ If the Work includes a "NOTICE" text file as part of its distribution, then any 
 
 END OF TERMS AND CONDITIONS
 
-
-eu-popup
-BSD-3-Clause
 
 zone.js
 MIT

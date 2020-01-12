@@ -41,9 +41,8 @@ import { StyleGuideConfigModule } from './style-guide-config/style-guide-config.
       useExisting: ConfigService,
     }),
     ServeStaticModule.forRoot({
-      // rootPath: join(__dirname, '../../elastic-style-angular/dist/admin'), // office
-      // rootPath: join(__dirname, '../../client/admin/dist/admin'), // home
-      rootPath: join(__dirname, '../angular/dist/admin'), // heroku
+      rootPath: join(__dirname, '../../elastic-style-angular/dist/admin'), // home
+      // rootPath: join(__dirname, '../angular/dist/admin'), // heroku
     }),
     AuthModule,
     RoomModule,

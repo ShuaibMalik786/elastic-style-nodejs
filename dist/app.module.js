@@ -50,7 +50,7 @@ AppModule = __decorate([
                 useExisting: config_service_1.ConfigService,
             }),
             serve_static_1.ServeStaticModule.forRoot({
-                rootPath: path_1.join(__dirname, '../../elastic-style-angular/dist/admin'),
+                rootPath: path_1.join(__dirname, '../angular/dist/admin'),
             }),
             auth_module_1.AuthModule,
             room_module_1.RoomModule,
